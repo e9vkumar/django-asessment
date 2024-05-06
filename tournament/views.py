@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from models import Team
+from .models import Team
 
 # Create your views here.
 class AllTeamView(generic.ListView):

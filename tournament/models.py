@@ -5,6 +5,10 @@ from django.db import models
 class Team(models.Model):
     country = models.CharField(max_length=3,unique=True)
 
+    def match_played(self):
+        return  
+
+
 class Match(models.Model):
     date = models.DateField()
 

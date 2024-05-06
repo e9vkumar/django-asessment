@@ -7,4 +7,8 @@ class AllTeamView(generic.ListView):
     
     def get_queryset(self):
         return Team.objects.all()
+    
+
+class DetailTeamView(generic.DetailView):
+    model = Team
 

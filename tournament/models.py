@@ -11,6 +11,9 @@ class Team(models.Model):
     def matches_won(self):
         pass
 
+    def matches_lost(self):
+        pass
+
 
 class Match(models.Model):
     date = models.DateField()

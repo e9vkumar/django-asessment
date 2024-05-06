@@ -8,6 +8,9 @@ class Team(models.Model):
     won = models.IntegerField(default=0)
     lost = models.IntegerField(default=0)
 
+    def __str__(self):
+        return self.country
+
     def match_played(self):
         return self.matches
 

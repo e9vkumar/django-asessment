@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'qux',
     'qux.seo',
     'tournament',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

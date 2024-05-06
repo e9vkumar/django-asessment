@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import hey
+import views
 urlpatterns = [
+    path('/teams/',views.AllTeamView.as_view(),name="all-view"),
     
 ]

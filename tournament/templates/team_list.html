@@ -1,0 +1,18 @@
+<table>
+    <thead>
+    <th>Team</th>
+    <th>M</th>
+    <th>W</th>
+    <th>L</th>
+    <th>Pts</th>
+    </thead>
+    {% for team in team.all %}
+    <tr>
+        <td>{{team.country}}</td>
+        <td>{{team.matches}}</td>
+        <td>{{team.won}}</td>
+        <td>{{team.lost}}</td>
+        <td>{{team.points}}</td>
+    </tr>
+    {% endfor %}
+</table>

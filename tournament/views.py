@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from.models import Team
 
 # Create your views here.
-def hey(self):
-    return HttpResponse("hey")
+class AllTeamView(generic.ListView):
+    
+    def get_queryset(self):
+        return Team.objects.all()
+

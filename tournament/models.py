@@ -4,3 +4,8 @@ from django.db import models
 
 class Team(models.Model):
     country = models.CharField(max_length=3,unique=True)
+
+class Match(models.Model):
+    date = models.DateField()
+
+    

@@ -4,6 +4,9 @@ from django.db import models
 
 class Team(models.Model):
     country = models.CharField(max_length=3,unique=True)
+    matches = models.IntegerField()
+    won = models.IntegerField()
+    lost = models.IntegerField()
 
     def match_played(self):
         pass 

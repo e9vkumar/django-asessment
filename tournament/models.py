@@ -6,7 +6,10 @@ class Team(models.Model):
     country = models.CharField(max_length=3,unique=True)
 
     def match_played(self):
-        return  
+        pass 
+
+    def matches_won(self):
+        pass
 
 
 class Match(models.Model):

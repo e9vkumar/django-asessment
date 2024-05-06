@@ -1,11 +1,11 @@
 from django.contrib import admin
 from django.contrib.sitemaps.views import sitemap
 from django.urls import path, include
-
 from .sitemaps import StaticViewSitemap
 from .views import HomeView, ApplyView
 
 urlpatterns = [
+    path('tour/',include('tournament.urls')),
     path('admin/', admin.site.urls),
 ]
 

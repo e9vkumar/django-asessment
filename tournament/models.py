@@ -24,3 +24,6 @@ class TeamMatch(models.Model):
     batting_score = models.IntegerField()
     batting_wickets = models.IntegerField()
     batting_overs = models.IntegerField()
+
+
+
